@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <h1>Kevin's Mortgage Calculator Application</h1>
       <form className="Form">
         <div className="Amount">
           <label>Mortgage Amount: </label>
@@ -20,6 +21,10 @@ function App() {
         <div>
           <label className="Years">Length (years): </label>
           <input type="number" placeholder="25"></input>
+        </div>
+        <div>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
         </div>
       </form>
     </div>

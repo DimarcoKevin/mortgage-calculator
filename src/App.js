@@ -2,7 +2,7 @@
 import './App.css';
 
 const getResult = e => {
-  
+  //const months = 
 }
 
 function App() {
@@ -15,20 +15,20 @@ function App() {
           <input type="number" placeholder="$500000"></input>
         </div>
         <div>
-          <label className="Downpayment">Downpayment: </label>
-          <input type="number" placeholder="$25000"></input>
+          <label>Downpayment: </label>
+          <input className="Downpayment" type="number" placeholder="$25000"></input>
         </div>
         <div>
-          <label className="Interest">Interest Rate: </label>
-          <input type="number" placeholder="3.5%"></input>
+          <label>Interest Rate: </label>
+          <input className="Interest" type="number" placeholder="3.5%"></input>
         </div>
         <div>
-          <label className="Years">Length (years): </label>
-          <input type="number" placeholder="25"></input>
+          <label>Length (years): </label>
+          <input className="Years" type="number" placeholder="25"></input>
         </div>
         <div>
-          <button type="reset">Clear</button>
-          <button type="submit">Submit</button>
+          <button className="Clear" type="reset">Clear</button>
+          <button className="Submit" type="submit">Submit</button>
         </div>
       </form>
       <div className="Result">

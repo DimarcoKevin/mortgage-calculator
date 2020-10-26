@@ -1,11 +1,15 @@
 
 import './App.css';
 
+const getResult = e => {
+  
+}
+
 function App() {
   return (
     <div className="App">
       <h1>Kevin's Mortgage Calculator Application</h1>
-      <form className="Form">
+      <form className="Form" onSubmit={getResult}>
         <div className="Amount">
           <label>Mortgage Amount: </label>
           <input type="number" placeholder="$500000"></input>

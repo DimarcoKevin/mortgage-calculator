@@ -1,18 +1,27 @@
 
 import './App.css';
 
-const getResult = e => {
-  //const months = 
-}
 
-function App() {
+const App = () => {
+
+  const [total, setTotal] = useState(0);
+
+  const getResult = e => {
+
+  }
+
   return (
     <div className="App">
       <h1>Kevin's Mortgage Calculator Application</h1>
       <form className="Form" onSubmit={getResult}>
         <div className="Amount">
           <label>Mortgage Amount: </label>
-          <input type="number" placeholder="$500000"></input>
+          <input 
+            onChange={event => setTotal(event.target.value)} 
+            className="Total" 
+            type="number"
+            placeholder="$500000">
+          </input>
         </div>
         <div>
           <label>Downpayment: </label>

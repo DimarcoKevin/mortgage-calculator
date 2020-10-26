@@ -10,7 +10,16 @@ const App = () => {
   const [years, setYears] = useState(0);
 
   const getResult = e => {
+    const months = years * 12;
+    const principle = total - downpayment;
+    const monthlyInterest = ((interest/100) / 12);
+    
+    // The math might be wrong on this
+    const monthlyPayment = principle * ((monthlyInterest * (1 + monthlyInterest) * Math.pow(months)) / ((1 + monthlyInterest) * Math.pow(months) - 1));
 
+    // this is the print statement but it changes instantly
+    const result = document.getElementById("Result");
+    result.innerHTML = "There will be " + months + " payments of " + monthlyPayment;
   }
 
   return (
@@ -63,8 +72,8 @@ const App = () => {
         </div>
 
       </form>
-      <div className="Result">
-        
+      <div>
+        <h1 id="Result" className="Result"></h1>
       </div>
     </div>
   );
